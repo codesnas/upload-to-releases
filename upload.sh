@@ -404,6 +404,7 @@ init_var() {
 
     echo -e "${INFO} repo:               [ $(sanitize_log "${repo}") ]"
     echo -e "${INFO} tag:                [ $(sanitize_log "${tag}") ]"
+    echo -e "${INFO} release_name:       [ $(sanitize_log "${release_name}") ]"
     echo -e "${INFO} artifacts:          [ $(sanitize_log "${artifacts}") ]"
     echo -e "${INFO} allow_updates:      [ ${allow_updates} ]"
     echo -e "${INFO} remove_artifacts:   [ ${remove_artifacts} ]"
@@ -413,7 +414,6 @@ init_var() {
     echo -e "${INFO} make_latest:        [ ${make_latest} ]"
     echo -e "${INFO} prerelease:         [ ${prerelease} ]"
     echo -e "${INFO} draft:              [ ${draft} ]"
-    echo -e "${INFO} release_name:       [ $(sanitize_log "${release_name}") ]"
     echo -e "${INFO} out_log:            [ ${out_log} ]"
     echo -e ""
 }
