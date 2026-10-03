@@ -12,7 +12,7 @@
 - name: 上传文件到 Release
   uses: ophub/upload-to-releases@main
   with:
-    tag: "设置 tags 名称"
+    tag: "设置 Tag 名称"
     artifacts: <path>/*.txt
     gh_token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -39,7 +39,7 @@
 | `body_file`          | 可选             | `""`                                       | Release 正文内容的 Markdown 文件路径，优先级高于 `body`。                                                                                                                                                                                            |
 | `out_log`            | 可选             | `false`                                    | 是否输出每个步骤的详细 JSON 日志，便于调试。可选值：`true` / `false`                                                                                                                                                                                 |
 
-## 输出参数(可选)
+## 输出参数（可选）
 
 | 输出         | 说明                                                                                                            |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
